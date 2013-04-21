@@ -20,9 +20,13 @@ class Breadcrumb
 	/**
 	 * Breadcrumb Factory
 	 */
-	public static function factory()
+	public static function factory($title = '', $url = '')
 	{
-		return new Breadcrumb;
+		$crumb = new Breadcrumb();
+		$crumb->set_title($title);
+		$crumb->set_url($url);
+		
+		return $crumb;
 	}
 	
 	/**

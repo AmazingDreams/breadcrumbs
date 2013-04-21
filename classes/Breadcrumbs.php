@@ -42,6 +42,6 @@ class Breadcrumbs
 	 */
 	public static function render($template = "breadcrumbs/layout")
 	{
-		echo View::factory($template)->set('breadcrumbs', self::$breadcrumbs)->render();
+		return View::factory($template)->set('breadcrumbs', self::$breadcrumbs)->render();
 	}
 }
